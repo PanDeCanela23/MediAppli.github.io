@@ -378,11 +378,17 @@ footer{
 
     /* ABOUT US */
 
-    .imagen-about-us{
-        margin-bottom: 60px;
-        width: 99%;
-    }
-
+    /* Versión mejorada para imágenes responsive */
+.imagen-about-us {
+    width: 100%;
+    max-width: 600px; /* Ancho máximo para pantallas grandes */
+    height: auto; /* Mantiene la proporción */
+    display: block;
+    margin: 0 auto 60px; /* Centrado y margen inferior */
+    object-fit: contain; /* Asegura que toda la imagen sea visible */
+    border-radius: 8px; /* Opcional: bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Opcional: sombra suave */
+}
     .sobre-nosotros .contenido-textos{
         width: 95%;
     }
